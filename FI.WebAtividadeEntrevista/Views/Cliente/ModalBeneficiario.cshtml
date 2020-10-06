@@ -1,0 +1,48 @@
+﻿<div id="modalBenef" class="modal fade">  
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>          
+                <h4 class="modal-title"> Beneficiários </h4>                                                    
+            </div>                                                                                              
+            <div class="modal-body">
+                <form id="formBenef">
+                    <div class="row" style="display:flex; align-items:flex-end;">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="NomeBenef">Nome:</label>                                                                      
+                                <input required="required" type="text" class="form-control" id="NomeBenef" name="NomeBenef" placeholder="Ex.: João" maxlength="50"> 
+                            </div>                                                                                   
+                        </div>                                                                                       
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label for="CPFBenef">CPF:</label>                                                                      
+                                <input required="required" type="text" class="form-control" id="CPFBenef" name="CPFBenef" placeholder="Ex.: 999.999.999-99" maxlength="14">                                                                      
+                            </div>
+                        </div>                                                                                       
+                        <div class="col-md-2" style="padding-bottom: 17px;">
+                            <button type="button" onclick="AddRow()" class="btn btn-sm btn-success">Incluir</button>                
+                        </div>                                                                                       
+                    </div>                                                                                          
+                </form>                                                                                          
+                <div class="row">
+                    <table class="table" id="benefTable">
+                        <thead>
+                            <tr>
+                                <th width="30%">Nome:</th>
+                                <th width="30%">CPF:</th>
+                                <th width="20%"></th>
+                                <th width="20%"></th>
+                            </tr>
+                        </thead>  
+                        <tbody>
+                        </tbody>
+                    </table> 
+                </div>
+            </div>                                                                                              
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" *>Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>                                                                                       
